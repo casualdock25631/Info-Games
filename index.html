@@ -181,6 +181,19 @@
         document.getElementById("boton6").addEventListener("click", function() {
             window.location.href = "fifa.html";
         });
+          </script>
+         <script>
+        const originalTitle = document.title;
+        const mensaje = "¡Vuelve pronto!";
+
+        document.addEventListener("visibilitychange", function() {
+            if (document.hidden) {
+                document.title = mensaje;
+            } else {
+                document.title = originalTitle;
+            }
+        });
+    </script>
         
         
     </script>

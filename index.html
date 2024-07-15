@@ -188,5 +188,17 @@
             window.location.href = "fifa.html";
         });
     </script>
+     <script>
+        const originalTitle = document.title;
+        const mensaje = "no me olvides 😭";
+
+        document.addEventListener("visibilitychange", function() {
+            if (document.hidden) {
+                document.title = mensaje;
+            } else {
+                document.title = originalTitle;
+            }
+        });
+    </script>
 </body>
 </html>

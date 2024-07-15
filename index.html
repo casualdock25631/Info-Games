@@ -86,80 +86,83 @@
             color: #ecf0f1;
             margin-bottom: 20px;
         }
-  /* Estilos de la busqueda */
-        p {
-            font-size: 18px;
-            color: #ecf0f1;
-            margin-bottom: 20px;
+
+        /* Estilos del buscador */
+        .buskador {
+            position: relative;
         }
-        .buskador{
-        position: relative;
-    }
-    input{
-        padding: 10px;
-        border-radius:5px 0 0 5px ;
-        outline: none;
-        background-color: #E94BEE;
-        color:white ;
-    }
+
+        input {
+            padding: 10px;
+            border-radius: 5px 0 0 5px;
+            outline: none;
+            background-color: #E94BEE;
+            color: white;
+        }
     </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Info Games</title>
+
+    <!-- AOS Library CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 <body>
- 
-   
     
-    <div class="container">
-        <h1>Bienvenido a Info Games</h1>
-         
-      <p>si buscas otro juego, ingrésalo aquí: </p>
-        <div class="buskador">
-<input type="text" placeholder="buscar...">
-        <p>Selecciona uno de los siguientes juegos para obtener información:</p>
-        <ul>
-            <li>
-                <button id="boton1">
-                    Minecraft
-                    <img src="https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2017/02/guia-todos-trucos-consejos-minecraft.jpg?tf=3840x" alt="Minecraft">
+<div class="container">
+    <h1 data-aos="fade-up" data-aos-duration="1250">Bienvenido a Info Games</h1>
+     
+    <p data-aos="fade-up" data-aos-duration="1250">Si buscas otro juego, ingrésalo aquí:</p>
+    <div class="buskador" data-aos="fade-up" data-aos-duration="1500">
+        <input type="text" placeholder="buscar...">
+    </div>
+    
+    <p data-aos="fade-up" data-aos-duration="1500">Selecciona uno de los siguientes juegos para obtener información:</p>
+    <ul>
+        <li data-aos="fade-right" data-aos-duration="1000">
+            <button id="boton1">
+                Minecraft
+                <img src="https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2017/02/guia-todos-trucos-consejos-minecraft.jpg?tf=3840x" alt="Minecraft">
+            </button>
+        </li>
+        <li data-aos="fade-right" data-aos-duration="1000">
+            <button id="boton2">
+                Fortnite
+                <img src="https://cdn2.unrealengine.com/fortnite-na-central-server-region-3-1920x1080-8e53d35d7d26.jpg" alt="Fortnite">
+            </button>
+        </li>
+        <li data-aos="fade-left" data-aos-duration="1000">
+            <button id="boton3">
+                Warzone
+                <img src="https://imgs.callofduty.com/content/dam/atvi/callofduty/cod-touchui/warzone2/mw3/meta/season-1/s1-wz-meta-thumb.jpg" alt="Warzone">
+            </button>
+        </li>
+        <li data-aos="fade-left" data-aos-duration="1000">
+            <button id="boton4">
+                Roblox
+                <img src="https://www.internetmatters.org/wp-content/uploads/2020/08/roblox.jpg" alt="Roblox">
+            </button>
+        </li>
+         <li data-aos="fade-down" data-aos-duration="1000">
+            <button id="boton5">
+                Valorant
+                <img src="https://ultimasnoticias.com.ve/wp-content/uploads/2022/10/Valorant-tendra-un-nuevo-modo-de-juego-competitivo-696x392.jpg" alt="Valorant">
                 </button>
             </li>
-            <li>
-                <button id="boton2">
-                    Fortnite
-                    <img src="https://cdn2.unrealengine.com/fortnite-na-central-server-region-3-1920x1080-8e53d35d7d26.jpg" alt="Fortnite">
-                </button>
-            </li>
-            <li>
-                <button id="boton3">
-                    Warzone
-                    <img src="https://imgs.callofduty.com/content/dam/atvi/callofduty/cod-touchui/warzone2/mw3/meta/season-1/s1-wz-meta-thumb.jpg" alt="Warzone">
-                </button>
-            </li>
-            <li>
-                <button id="boton4">
-                    Roblox
-                    <img src="https://www.internetmatters.org/wp-content/uploads/2020/08/roblox.jpg" alt="Roblox">
-                </button>
-            </li>
-             <li>
-                <button id="boton5">
-                    Valorant
-                    <img src="https://ultimasnoticias.com.ve/wp-content/uploads/2022/10/Valorant-tendra-un-nuevo-modo-de-juego-competitivo-696x392.jpg" alt="Roblox">
-                </button>
-            </li>
-             <li>
+            <li data-aos="fade-up" data-aos-duration="1000">
                 <button id="boton6">
-                    Fifa
-                    <img src="https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/bltc0d78e26325512da/64ac872e30d4ea1d0317475b/EA_Sports_FC_24_portada.jpg?auto=webp&format=pjpg&width=3840&quality=60" alt="Roblox">
+                    FIFA
+                    <img src="https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/bltc0d78e26325512da/64ac872e30d4ea1d0317475b/EA_Sports_FC_24_portada.jpg?auto=webp&format=pjpg&width=3840&quality=60" alt="FIFA">
                 </button>
             </li>
-            <!-- Repite el mismo patrón para otros botones si es necesario -->
         </ul>
     </div>
 
+    <!-- Incluir AOS script -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script>
+        AOS.init();
+        
         // Cambia el texto de los botones
         document.getElementById("boton1").addEventListener("click", function() {
             window.location.href = "minecraft.html";
@@ -172,30 +175,18 @@
         document.getElementById("boton3").addEventListener("click", function() {
             window.location.href = "warzone.html";
         });
+
         document.getElementById("boton4").addEventListener("click", function() {
             window.location.href = "roblox.html";
         });
+
         document.getElementById("boton5").addEventListener("click", function() {
             window.location.href = "valorant.html";
         });
+
         document.getElementById("boton6").addEventListener("click", function() {
             window.location.href = "fifa.html";
         });
-          </script>
-         <script>
-        const originalTitle = document.title;
-        const mensaje = "no me olvides 😭";
-
-        document.addEventListener("visibilitychange", function() {
-            if (document.hidden) {
-                document.title = mensaje;
-            } else {
-                document.title = originalTitle;
-            }
-        });
-    </script>
-        
-        
     </script>
 </body>
 </html>
